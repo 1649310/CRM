@@ -1,0 +1,29 @@
+.content 
+    .about.clearfix
+        .about__left
+            .about__pic
+                img.about__pic-img(src="images/content/user.png")
+        .about__right
+            .about__user
+                .about__title
+                    h2.title__name Max Jones
+                    .about__status gold
+                .about__desc Sales & Marketing
+            .about__contact
+                .about__phone.clearfix
+                    .about__contact-head phone
+                    a.about__contact-link(href="tel:(+31) 140 175 468") (+31) 140 175 468
+                .about__address
+                    .about__contact-head address
+                    a.about__contact-link(href="Binnenweg 50, Rotterdam") Binnenweg 50, Rotterdam
+                .about__btn
+                    a.button(href="#") create quote
+    .tabs
+        ul.tabs__list
+            li.tabs__item
+                a.tabs__link.tabs__link-active(href="#") Overview
+            li.tabs__item
+                a.tabs__link(href="#") Orders
+            li.tabs__item
+                a.tabs__link(href="#") Payments
+        .tabs__content

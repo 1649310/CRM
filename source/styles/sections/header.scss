@@ -1,0 +1,115 @@
+.header {
+    background: #fff;
+    border-bottom: 3px solid #f8f8f8;
+    margin-bottom: 60px;
+}
+.header__container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+}
+.breadcrums__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 26px;
+
+	&:first-child {  
+		margin-left: 0;
+		.breadcrums__link {
+			&::before {
+				display: none;
+			}
+		}
+	}
+}
+.breadcrums__link {
+    font-size: 16px;
+    color: #4f4f4f;
+    @include open_sans(bold);
+
+    &:before {
+        content: "";
+        background: url("../images/header/arrow.png")no-repeat;
+        height: 14px;
+        width: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+}
+
+.breadcrums__link-active {
+    color: #442a9d;
+}
+
+.search {
+    position: relative;
+    width: 284px;
+}
+
+.search__input {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #ededed;
+    padding: 13px 35px 13px 20px;
+    border-radius: 3px;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 12px;
+    @include open_sans(regular);
+}
+
+.search__submit {
+    background: url(../images/header/zoom.png) no-repeat ;
+    height: 17px;
+    width: 17px;
+    display: block;
+    border: none;
+    font-size: 0px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 18px;
+
+}
+.notifications {
+    position: relative;
+}
+
+.notifications__col {
+    background: #f14e95;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    @include open_sans(bold);
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    margin-left: 4px;
+}
+.user__avatar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+.user__username {
+    display: inline-block;
+    vertical-align: middle;
+    color: #4f4f4f;
+    font-size: 16px;
+    @include open_sans(bold);
+    margin-left: 12px;
+}

@@ -1,0 +1,24 @@
+header.header
+    .container
+        .header__container
+            .breadcrums
+                ul.breadcrums__list
+                    li.breadcrums__item
+                        a.breadcrums__link(href="#") Customers
+                        
+                    li.breadcrums__item
+                        a.breadcrums__link.breadcrums__link-active(href="#") Max Jones
+                  
+            .search
+                form(action="#" method="post")
+                    input.search__input(type="text" placeholder="search")
+                    input.search__submit(type="submit")
+
+            .notifications
+                img.notifications__img(src="images/header/notification.png")
+                .notifications__col 4
+
+            .user
+                .user__avatar
+                    img.user__avatar-pic(src="images/header/user.png")
+                .user__username Hello Lauren
