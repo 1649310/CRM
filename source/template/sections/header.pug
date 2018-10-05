@@ -1,14 +1,14 @@
 header.header
-    .container
-        .header__container
-            .breadcrums
-                ul.breadcrums__list
-                    li.breadcrums__item
-                        a.breadcrums__link(href="#") Customers
+    .header__container.clearfix
+        .header__left
+            .breadcrumbs
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Customers
                         
-                    li.breadcrums__item
-                        a.breadcrums__link.breadcrums__link-active(href="#") Max Jones
-                  
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link.breadcrumbs__link-active(href="#") Max Jones
+        .header__right         
             .search
                 form(action="#" method="post")
                     input.search__input(type="text" placeholder="search")

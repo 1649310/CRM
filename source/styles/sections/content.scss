@@ -20,7 +20,7 @@
 }
 .about__right {
     float: left;
-    width: 930px;
+    width: calc(100% - 165px);
 }
 .about__user {
     border-bottom: 2px solid #f1f1f1;
@@ -54,7 +54,7 @@
 }
 .about__phone, .about__address {
     float: left;
-    width: 280px;
+    width: 30%;
 }
 .about__contact-head {
     text-transform: uppercase; 
