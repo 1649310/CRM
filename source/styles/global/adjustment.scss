@@ -1,4 +1,5 @@
 
+
 //adjustment styles
 body, html {
 	width: 100%;
@@ -19,10 +20,6 @@ body {
 	margin: 0 auto;
 }
 
-.page-content {
-	float: left;
-	width: calc(100% - 318px);
-}
 .clearfix {
 	&:after {
 		content: "";

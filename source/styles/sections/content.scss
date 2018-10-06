@@ -1,3 +1,7 @@
+.page-content {
+	float: left;
+	width: calc(100% - 318px);
+}
 .about {
     margin-bottom: 70px;
 }
@@ -6,8 +10,8 @@
     float: left;
 }
 .about__pic{
-    width: 90px;
-    height: 90px;
+    width: 96px;
+    height: 96px;
     overflow: hidden;
     border-radius: 50%;
     margin-left: 35px;
@@ -28,7 +32,7 @@
 }
 .about__title {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .title__name {
     @include open_sans(bold);
@@ -43,7 +47,7 @@
     text-transform: uppercase;
     font-size: 12px;
     @include open_sans(bold);
-    padding: 5px 10px;
+    padding: 4px 6px;
     border-radius: 3px;
 }
 .about__desc {
@@ -61,7 +65,7 @@
     color: #999;
     @include open_sans(bold);
     font-size: 12px;
-    margin-bottom: 13px;
+    margin-bottom: 6px;
 }
 .about__contact-link {
     color: #442a9d;
@@ -79,7 +83,7 @@
     @include open_sans(bold);
     background: #303841;
     border-radius: 3px;
-    padding: 12px 27px;
+    padding: 10px 28px;
     display: block;
 }
 .tabs__list {
@@ -94,7 +98,7 @@
     text-transform: uppercase;
     font-size: 14px;
     @include open_sans(bold);
-    padding: 22px 18px;
+    padding: 22px 24px;
     display: block;
 
     &:hover {
@@ -130,5 +134,5 @@
 }
 .tabs__content  {
     background: #ededed;
-    height: 200px;
+    height: 212px;
 }
